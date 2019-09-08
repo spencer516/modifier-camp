@@ -1,0 +1,12 @@
+.autoresize-example {
+  margin: 20px;
+  width: 500px;
+  height: calc(2em + 18px);
+  border-radius: 3px;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 8px;
+  overflow: hidden;
+  resize: none;
+  font-family: "Avenir";
+  font-size: 24px;
+}

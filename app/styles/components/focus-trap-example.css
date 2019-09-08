@@ -1,0 +1,23 @@
+.focus-trap-wrapper {
+  margin: 20px;
+  width: 200px;
+}
+
+.inp {
+  margin: 8px;
+}
+
+.trapped {
+  background: rgb(200, 200, 200);
+  padding: 8px;
+}
+
+input {
+  font-family: "Avenir";
+}
+
+.header {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Avenir";
+}

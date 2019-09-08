@@ -1,0 +1,8 @@
+<div local-class="flex-container">
+  <div local-class="child"></div>
+  <div {{did-resize this.didResize debounce=50}}>
+    Resize Amount: {{this.resizes}}
+    Current Width: {{this.width}}px
+  </div>
+  <div local-class="child"></div>
+</div>
