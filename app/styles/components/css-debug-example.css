@@ -1,0 +1,28 @@
+.container {
+  --margin: 1em;
+  font-size: 48px;
+  position: absolute;
+  box-sizing: border-box;
+  margin: var(--margin);
+  left: 0;
+  top: 0;
+  height: calc(100vh - var(--margin) - var(--margin));
+  width: calc(100vw - var(--margin) - var(--margin));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--margin);
+}
+
+.item {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Avenir";
+  font-size: 48px;
+  color: white;
+}
+
+.item > p {
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+<div local-class="center-me">
+  <button
+    {{on "mouseenter" (action (mut this.tooltipName) "button1")}}
+    {{on "mouseleave" (action (mut this.tooltipName) false)}}
+    {{popover-anchor "button1"}}
+  >
+    This is BUTTON1
+  </button>
+
+  <button
+    {{on "mouseenter" (action (mut this.tooltipName) "button2")}}
+    {{on "mouseleave" (action (mut this.tooltipName) false)}}
+    {{popover-anchor "button2"}}
+  >
+    This is BUTTON2
+  </button>
+
+  <button
+    {{on "mouseenter" (action (mut this.tooltipName) "button3")}}
+    {{on "mouseleave" (action (mut this.tooltipName) false)}}
+    {{popover-anchor "button3"}}
+  >
+    This is BUTTON3
+  </button>
+</div>
+
+{{#if this.tooltipName}}
+  <div local-class="tooltip" {{popover this.tooltipName}}>
+    This is the tooltip for {{this.tooltipName}}
+  </div>
+{{/if}}

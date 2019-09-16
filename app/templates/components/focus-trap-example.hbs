@@ -2,11 +2,20 @@
   <div local-class="inp"><input type="text" placeholder="first focus!"></div>
   <div local-class="inp"><input type="text" placeholder="second focus!"></div>
 
-  <div local-class="trapped" {{focus-trap}}>
-    <h4 local-class="header">Trapped Focus Here!</h4>
-    <div local-class="inp"><input type="text" placeholder="third focus!"></div>
-    <div local-class="inp"><input type="text" placeholder="fourth focus!"></div>
-  </div>
+  {{#if this.showForm}}
+    <div local-class="trapped" {{focus-trap}}>
+      <h4 local-class="header">Trapped Focus Modal!</h4>
+      <div local-class="inp"><input type="text" placeholder="third focus!"></div>
+      <div local-class="inp"><input type="text" placeholder="fourth focus!"></div>
+      <button {{on "click" (fn (mut this.showForm) false)}}>
+        Hide Form!
+      </button>
+    </div>
+  {{/if}}
 
   <div local-class="inp"><input type="text" placeholder="fifth focus!"></div>
+
+  <button {{on "click" (fn (mut this.showForm) true)}}>
+    Show Form!
+  </button>
 </div>

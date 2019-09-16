@@ -1,0 +1,35 @@
+.container {
+  margin: 5px;
+  border-radius: 3px;
+  border: 2px solid #2D2B55;
+  background: #B362FF;
+  padding: 50px;
+  display: inline-block;
+}
+
+.child {
+  cursor: pointer;
+}
+
+.cursor {
+  --x: 0px;
+  --y: 0px;
+  --r: 0deg;
+  width: 28px;
+  height: 28px;
+  display: none;
+  position: fixed;
+  left: -8px;
+  top: -6px;
+  pointer-events: none;
+  user-select: none;
+  transform: translate(var(--x), var(--y));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4));
+}
+
+.cursor > svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transform: rotate(var(--r));
+}

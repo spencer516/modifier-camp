@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.element-1 {
+  background: #2D2B55;
+}
+
+.element-2 {
+  background: #FAD000;
+}
+
+.element-3 {
+  background: #9EFFFF;
+}
+
+.element-4 {
+  background: #B362FF;
+}
